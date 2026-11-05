@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="3D Pinball table">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1b2a6b"/>
+      <stop offset="0.55" stop-color="#0b1330"/>
+      <stop offset="1" stop-color="#05070f"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="10" y1="6" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7ee3ff"/>
+      <stop offset="0.5" stop-color="#9a7bff"/>
+      <stop offset="1" stop-color="#ff5bd0"/>
+    </linearGradient>
+    <radialGradient id="ball" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.5" stop-color="#cdd8ea"/>
+      <stop offset="1" stop-color="#6d7b96"/>
+    </radialGradient>
+    <radialGradient id="popA" cx="0.35" cy="0.3" r="0.85">
+      <stop offset="0" stop-color="#ffd9f2"/>
+      <stop offset="0.45" stop-color="#ff5bd0"/>
+      <stop offset="1" stop-color="#7a1466"/>
+    </radialGradient>
+    <radialGradient id="popB" cx="0.35" cy="0.3" r="0.85">
+      <stop offset="0" stop-color="#d8f4ff"/>
+      <stop offset="0.45" stop-color="#57d9ff"/>
+      <stop offset="1" stop-color="#0b4a72"/>
+    </radialGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bg)"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="url(#rim)" stroke-opacity="0.75" stroke-width="1.5"/>
+  <g fill="#bcd8ff">
+    <circle cx="15" cy="13" r="0.9" opacity="0.9"/>
+    <circle cx="49" cy="16" r="0.7" opacity="0.6"/>
+    <circle cx="42" cy="9" r="0.55" opacity="0.55"/>
+    <circle cx="22" cy="21" r="0.5" opacity="0.5"/>
+    <circle cx="53" cy="33" r="0.6" opacity="0.45"/>
+  </g>
+  <path d="M12 26a20 20 0 0 1 40 0v18a20 20 0 0 1-4 8H16a20 20 0 0 1-4-8z" fill="none" stroke="url(#rim)" stroke-width="2" stroke-opacity="0.55"/>
+  <circle cx="21.5" cy="27" r="6.2" fill="url(#popB)" stroke="#a9ecff" stroke-opacity="0.7" stroke-width="1"/>
+  <circle cx="42.5" cy="30" r="5.4" fill="url(#popA)" stroke="#ffb7ea" stroke-opacity="0.7" stroke-width="1"/>
+  <circle cx="32" cy="19.5" r="4.4" fill="#ffcf5c" stroke="#fff0bd" stroke-opacity="0.8" stroke-width="1"/>
+  <circle cx="32" cy="39.5" r="4.6" fill="url(#ball)"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M18 49.5 28 45" stroke="#ff6d5c" stroke-width="4.6"/>
+    <path d="M46 49.5 36 45" stroke="#5ca8ff" stroke-width="4.6"/>
+  </g>
+  <g fill="#9fe9ff" opacity="0.85">
+    <rect x="12.5" y="54.5" width="9" height="2.6" rx="1.3"/>
+    <rect x="24.5" y="54.5" width="9" height="2.6" rx="1.3" opacity="0.75"/>
+    <rect x="36.5" y="54.5" width="9" height="2.6" rx="1.3" opacity="0.5"/>
+  </g>
+</svg>

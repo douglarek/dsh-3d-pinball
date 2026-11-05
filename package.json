@@ -1,0 +1,47 @@
+{
+  "name": "@douglarek/dsh-3d-pinball",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Full Tilt! style 3D pinball table with a sidebar entry in the DeepSeek Harness Web UI",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "author": "Leo Douglas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglarek/dsh-3d-pinball.git"
+  },
+  "homepage": "https://github.com/douglarek/dsh-3d-pinball",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "pinball",
+    "game"
+  ]
+}
